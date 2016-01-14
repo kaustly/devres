@@ -8,8 +8,6 @@
      <li><%= link_to(link.title, link.url, target: 'blank') %></li>
     <%end%>
   </ul>
-
-
   </sidebar>
 
 </section>
@@ -19,6 +17,14 @@
 </ul>
 
 <section>
+  <h3> Suggestion? </h3>
+  <form action="//formspree.io/kaustly@gmail.com"
+        method="POST">
+      <input type="text" name="name" placeholder="your name">
+      <input type="email" name="_replyto" placeholder="your email">
+      <input name="suggestion">suggestion</input>
+      <input type="submit" value="Send">
+  </form>
 
 
-<%= link_to "add new post", new_technology_post_path(@technology) %>
+<%#= link_to "add new post", new_technology_post_path(@technology) %>
