@@ -4,10 +4,16 @@
   <title>DevRes</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1><%= link_to "DevRes", root_path %></h1>
+  <!-- <h1><%= link_to "a l l Technologies", root_path %></h1> -->
 
 <%= yield %>
 

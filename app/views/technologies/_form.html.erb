@@ -1,7 +1,7 @@
-<%= form_for @post do |f| %>
+<%= form_for @technology do |f| %>
 <%= f.label :title %>
-<%= f.text_field :title %>
-<%= f.label :icon %>
-<%= f.text_area :icon_url %>
+<%= f.text_field :name %>
+<%= f.label :url %>
+<%= f.text_area :url %>
 <%= f.submit %>
 <% end %>

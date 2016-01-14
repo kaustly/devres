@@ -1,12 +1,20 @@
-<%= link_to "add new technology", new_technology_path %>
+
+<h2><%= @technology.name %></h2>
+<section>
+
+  <sidebar>
+    <ul>
+    <% @technology.links.each do |link| %>
+     <li><%= link_to(link.title, link.url, target: 'blank') %></li>
+    <%end%>
+  </ul>
+
+
+  </sidebar>
+
+</section>
 
 <section>
-  <% @technologies.each do |post| %>
-  <article>
-    <h2><%= link_to technology.title, technology_path(technology) %></h2>
-    <time>Updated at <%= post.updated_at %></time>
-    <p><%= technology.icon_url %></p>
+  
 
-  </article>
-  <% end %>
-</section>
+<%= link_to "add new post", new_post_path %>

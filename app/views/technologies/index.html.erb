@@ -1,0 +1,14 @@
+<h1>All Technologies</h1>
+
+<% @technologies.each do |tech| %>
+<article>
+  <ul class="image-cropper"><%= image_tag tech.icon_url %> class="rounded"/>
+  </ul>
+
+  <%= link_to tech.name, technology_path(tech) %>
+
+</article>
+<% end %>
+
+
+<%= link_to "add new technology", new_technology_path %>

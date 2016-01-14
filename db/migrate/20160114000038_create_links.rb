@@ -2,7 +2,7 @@ class CreateLinks < ActiveRecord::Migration
   def change
     create_table :links do |t|
       t.string :title
-      t.text :icon_url
+      t.text :url
       t.references :technology
       t.timestamps null: false
     end
