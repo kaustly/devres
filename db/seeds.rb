@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+ruby= Technology.create(name: 'Ruby', icon_url: 'https://cdn.tutsplus.com/net/uploads/legacy/966_essentialReading/images/rubylang.png')
+javascript= Technology.create(name: 'JavaScript', icon_url: 'http://plainicon.com/dboard/userprod/2800_a1826/prod_thumb/plainicon.com-50244-256px-bb0.png')
