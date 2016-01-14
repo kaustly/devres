@@ -1,0 +1,19 @@
+
+<%= link_to "&larr; Back".html_safe, posts_path %>
+<article>
+  <h2><%= @post.title %></h2>
+  <time>Updated at <%= @post.updated_at %></time>
+  <p><%= @post.body %></p>
+
+    <%= link_to "Edit Post", edit_post_path(@post) %>
+    <%= link_to "Delete Post", post_path(@post), method: :delete %>
+
+  <h3>Tags</h3>
+  <% @post.tags.each do |tag| %>
+    <span><%= link_to tag.category.name, category_path(tag.category) %></span>
+  <% end %>
+
+  <%= form_for [@post, @tag] do |f| %>
+    <%= text_field_tag :category_name %>
+    <%= f.submit "Create Tag" %>
+  <% end %>
