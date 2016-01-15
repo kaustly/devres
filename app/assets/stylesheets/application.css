@@ -13,10 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
  .image-cropper {
+   /*display: inline-block;*/
      width: 100px;
      height: 100px;
-     position: relative;
+     /*position: relative;*/
      overflow: hidden;
      border-radius: 50%;
  }
@@ -27,3 +29,164 @@
      height: 100%;
      width: auto;
  }
+
+ .row {
+  border: 2px solid white;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+input {
+  margin: auto;
+  border-radius: 1%;
+  float:center;
+
+}
+ul{
+  margin: auto;
+  float: right;
+}
+
+
+.column {
+  float: left;
+  border: 2px solid white;
+  border-radius: 1%;
+  text-align: center;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  overflow:auto;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row,
+.column {
+  box-sizing: border-box;
+}
+
+.row {
+  overflow: auto;
+}
+
+.column-1 {
+  width: 8.333%;
+}
+
+.column-2 {
+  width: 16.66%;
+}
+
+.column-3 {
+  width: 25%;
+}
+
+.column-4 {
+  width: 33.33%;
+}
+
+.column-5 {
+  width: 41.66%;
+}
+
+.column-6 {
+  width: 50%;
+}
+
+.column-7 {
+  width: 58.33%;
+}
+
+.column-8 {
+  width: 66.66%;
+}
+
+.column-9 {
+  width: 75%;
+}
+
+.column-10 {
+  width: 83.33%;
+}
+
+.column-11 {
+  width: 91.66%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+
+.header > .column,
+.footer > .column {
+  padding: 3%;
+}
+
+.middle > .column {
+  height: 300px;
+  line-height: 400px;
+}
+
+/* Let's tweak our faux nav menu so it doesn't look as terrible */
+.header ul {
+  margin: auto;
+}
+
+.header li {
+  display: inline-block;
+  list-style-type: none;
+}
+.header > .column,
+.footer > .column {
+  padding: 25px;
+}
+.row:before,
+.row:after {
+  content: "";
+  overflow: auto;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row,
+.column {
+  box-sizing: border-box;
+}
+
+.row {
+  overflow: auto;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+}
+
+
+.module {
+
+  /* Now let's give our modules a left and right margin of 10px */
+margin: 0 10px 0 10px;
+
+ border-radius: 20px;
+ text-align: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .column {
+    margin: 1% 0 1% 0%;
+    width: 100%;
+  }
+}

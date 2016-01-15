@@ -1,30 +1,41 @@
-
-<h2><%= @technology.name %></h2>
-<section>
-
-  <sidebar>
-    <ul>
-    <% @technology.links.each do |link| %>
-     <li><%= link_to(link.title, link.url, target: 'blank') %></li>
-    <%end%>
-  </ul>
-  </sidebar>
-
-</section>
-<ul><% @technology.posts.each do |post| %>
-  <li><%= post.title %></li>
-  <% end %>
-</ul>
-
-<section>
-  <h3> Suggestion? </h3>
-  <form action="//formspree.io/kaustly@gmail.com"
-        method="POST">
-      <input type="text" name="name" placeholder="your name">
-      <input type="email" name="_replyto" placeholder="your email">
-      <input name="suggestion">suggestion</input>
+<body>
+  <div class="row header">
+    <div class="col s12"><h2><%= @technology.name %></h2></div>
+  </div>
+  <div class="row">
+    <div class="col s12 m4 l2">
+      <form action="//formspree.io/kaustly@gmail.com"method="POST">
+      <label>n a m e</label><br>
+      <input class="align-center" type="text" name="name"/><br>
+      <label>e m a i l</label><br>
+      <input class="align-center" type="email" name="_replyto"/><br>
+      <label>t h o u g h t s</label><br>
+      <input class="align-center" type="text" name="suggestion"></input><br>
       <input type="submit" value="Send">
-  </form>
+    </form>
+  </div>
 
+  <div class="col s12 m4 l8">
+    <p class="module"><% @technology.posts.each do |post| %>
+      <div>
+        <h4> <%= post.title %> </h4>
+        <%=h simple_format(post.body) %>
+      </div>
+      <% end %>
+    </p>
 
-<%#= link_to "add new post", new_technology_post_path(@technology) %>
+  </div>
+
+  <div class="col s12 m4 l2">
+    <ul><% @technology.links.each do |link| %>
+      <h6><%= link_to(link.title, link.url, target: 'blank') %></h6>
+      <%end%>
+    </ul>
+    </div>
+  </div>
+
+  <div class="row footer">
+    <div class="col s12">(c) kelly austin, 2015.</div>
+  </div>
+
+</body>

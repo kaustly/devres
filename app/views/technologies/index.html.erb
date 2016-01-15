@@ -1,14 +1,12 @@
-<h1>All Technologies</h1>
+<h2>All Technologies</h2>
 
-<% @technologies.each do |tech| %>
-<article>
-  <ul class="image-cropper"><%= image_tag tech.icon_url %> class="rounded"/>
-  </ul>
-
-  <%= link_to tech.name, technology_path(tech) %>
+<div class="row overlay container"><% @technologies.each do |tech| %>
+<article class="col m4 center-align">
+  <p class="image-cropper center-align"><%= image_tag tech.icon_url %> class="rounded">
+  </p>
+  <div class="col m4 center-align"><%= link_to tech.name, technology_path(tech) %>
+</div>
 
 </article>
 <% end %>
-
-
-<%= link_to "add new technology", new_technology_path %>
+</div>
