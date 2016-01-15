@@ -15,11 +15,13 @@
     </form>
   </div>
 
+
   <div class="col s12 m4 l8">
     <p class="module"><% @technology.posts.each do |post| %>
       <div>
         <h4> <%= post.title %> </h4>
         <%=h simple_format(post.body) %>
+
       </div>
       <% end %>
     </p>

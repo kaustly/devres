@@ -1,28 +1,37 @@
-== README
+# Dev-Res
+development resources
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Summary:
+Documentation, brief introductions, cheatsheets, and helpful links to all your favorite web development technologies.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##URL
+https://dev-res.herokuapp.com/
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+##Technologies Used
+* Ruby on Rails
+* Formspree gem
+* Active Admin gem
+* Materialize-Sass
+* jQuery
+* Trello
+* good 'ole pen and paper.
+
+##Unsolved Problems
+* not having to sign in as admin just to view
+* Breadcrumbs
+* page transitions
+* Move formspree functionality to the front-end
+
+##Coming Features
+* More technologies
+* More links
+* tags & search bar
+* twitter widgets!
+* online-learning guide
+
+
+##Contact information
+Create an issue on this repo with any questions.
+
+##Thank you!
