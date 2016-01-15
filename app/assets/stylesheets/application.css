@@ -171,8 +171,9 @@ ul{
 .container {
   align-items: center;
   display: flex;
+  min-width: 100%;
+	max-width: 90%;
 }
-
 
 .module {
 
